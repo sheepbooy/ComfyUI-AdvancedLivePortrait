@@ -723,7 +723,7 @@ class AdvancedLivePortrait:
         return cmd_list, total_length
 
 
-    def run(self, retargeting_eyes, retargeting_mouth, turn_on, tracking_src_vid, animate_without_vid, command, crop_factor,
+    def run(self, retargeting_eyes, retargeting_mouth, crop_factor, turn_on, tracking_src_vid, animate_without_vid, command,
             src_images=None, driving_images=None, motion_link=None):
         if turn_on == False: return (None,None)
         src_length = 1
@@ -969,7 +969,7 @@ NODE_CLASS_MAPPINGS = {
     "LoadExpData": LoadExpData,
     "SaveExpData": SaveExpData,
     "ExpData": ExpData,
-    "PrintExpData:": PrintExpData,
+    "PrintExpData": PrintExpData,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
